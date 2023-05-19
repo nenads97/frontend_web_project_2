@@ -1,0 +1,41 @@
+//1. config
+@import 'config/reset';
+@import 'config/variables';
+@import 'config/mixins';
+@import 'config/fonts';
+@import 'config/typography';
+@import 'config/iconfont';
+@import 'config/helpers';
+
+// 2. components
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+@import 'components/banner';
+@import 'components/products';
+
+// 3. layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/forms';
+@import 'layout/grid';
+@import 'layout/navigation';
+@import 'layout/sidebar';
+
+// 4. pages
+@import 'pages/home';
+@import 'pages/contact';
+
+// 5. vendors
+@import 'vendors/bootstrap';
+@import 'vendors/swiper';
+@import 'vendors/selectric';
+
+// 6. themes
+@import 'themes/admin';
+@import 'themes/theme';
+
+// nvm list - komanda za listu verzija
+// nvm install {verz} - instalacija verzije (nvm install 8.11.3)
+// nvm use {verz} - upotreba verzije
