@@ -1,0 +1,42 @@
+.nav {
+    transform: translate(-1px, -26px);
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav__list-item {
+    font-size: 16px;
+    line-height: 16px;
+    color: $bunker-mid-light;
+    font-weight: 400;
+
+    &:hover {
+        color: $bunker;
+
+        &::after {
+            content: '';
+            display: block;
+            border: 1px solid $tacao;
+        }
+    }
+}
+
+.nav__margin {
+    margin: 0 34px;
+}
+
+.nav__margin-left {
+    margin-left: 34px;
+}
+
+.nav__margin-right {
+    margin-right: 34px;
+}
+
+.nav__list-link {
+    text-decoration: none;
+}
