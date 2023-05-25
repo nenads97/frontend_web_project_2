@@ -1,0 +1,46 @@
+.info__background {
+    @extend %bg-img;
+    padding-top: 110px;
+    overflow: hidden;
+}
+
+.info__imgs {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 116px;
+    margin-left: 5px;
+}
+
+.info__img-2 {
+    position: absolute;
+    top: 109px;
+    left: 246px;
+}
+
+.info__content {
+    max-width: 482px;
+    float: right;
+    position: relative;
+    transform: translateX(-5px);
+}
+
+.info__title {
+    color: $bunker;
+    padding-bottom: 36.17px;
+
+    &::before {
+        content: '';
+        width: 100px;
+        height: 0;
+        border: 1px solid $bunker;
+        top: 28px;
+        left: -121px;
+        display: block;
+        position: absolute;
+    }
+}
+
+.info__text {
+    padding-bottom: 16.59px;
+}

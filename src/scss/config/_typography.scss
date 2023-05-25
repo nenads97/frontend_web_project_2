@@ -10,3 +10,24 @@ h5,
 h6 {
     font-family: $font-primary;
 }
+
+.h1,
+h1 {
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 96px;
+}
+
+.h2,
+h2 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $bunker-paragraph;
+}
