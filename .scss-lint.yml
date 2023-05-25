@@ -4,6 +4,7 @@ options:
 files:
   ignore: 
     - 'src/scss/config/iconfont-template/*.scss'
+    - 'src/scss/config/_iconfont.scss'
     - 'src/scss/config/_reset.scss'
   include: '**/*.s+(a|c)ss'
 rules:

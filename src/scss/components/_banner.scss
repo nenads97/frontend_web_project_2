@@ -1,0 +1,38 @@
+.banner {
+    width: 100%;
+    background-color: $black2;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner__title {
+    max-width: 567px;
+    padding-top: 152px;
+    padding-bottom: 23px;
+    color: $white;
+}
+
+.banner__text {
+    max-width: 458px;
+    padding-bottom: 37px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $white;
+    opacity: 0.7;
+    transform: translateY(-2px);
+}
+
+.banner__content {
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+.banner__img {
+    @extend %bg-img;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-bottom: 67.04%;
+}

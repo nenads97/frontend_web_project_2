@@ -25,3 +25,11 @@ iconfont Webfont
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+<% _.each(glyphs, function(icon) {
+        %> .icon-<%=icon.name %>::before {
+            content: '\<%= icon.unicode[0].charCodeAt(0).toString(16) %>';
+        }
+
+        <%
+    }) %>

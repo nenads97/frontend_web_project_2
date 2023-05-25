@@ -6,6 +6,7 @@
 }
 
 .header__background-img {
+    @extend %bg-img;
     width: 100%;
     margin: 0 auto;
 }
@@ -15,6 +16,10 @@
     width: 131px;
     height: 131px;
     transform: translateY(-20px);
+
+    @include breakpoint(phone) {
+        margin: 0;
+    }
 }
 
 .header__thin-line {
