@@ -22,10 +22,6 @@
     &:hover {
         opacity: 0.7;
     }
-}
-
-.info__btn {
-    color: $bunker;
 
     &::after {
         content: '';
@@ -36,6 +32,25 @@
         top: 0px;
         right: 17px;
     }
+}
+
+.products__btn2 {
+    width: 102px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+.btn2--black {
+    color: $bunker;
+}
+
+.btn2--white {
+    color: $white;
+}
+
+.info__btn {
+    color: $bunker;
 }
 
 .icon {

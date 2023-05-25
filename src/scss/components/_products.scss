@@ -1,0 +1,50 @@
+.products {
+    width: 100%;
+}
+
+.products__background {
+    @extend %bg-img;
+}
+
+.products__background-mask {
+    background-color: $bunker-dark;
+    padding-top: 100px;
+    position: relative;
+}
+
+.products__img-wrap {
+    @extend %bg-img;
+    width: 278px;
+    height: 278px;
+    position: relative;
+}
+
+.products__price {
+    font-family: 'Joane';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    width: 100px;
+    padding: 14px 14px 13px 16px;
+    background-color: $bunker;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: $white;
+}
+
+.products__background-img {
+    width: 100%;
+    height: 100%;
+}
+
+.products__col {
+    display: flex;
+    flex-direction: column;
+}
+
+.products__table {
+    display: flex;
+    flex-direction: row;
+}

@@ -23,6 +23,38 @@ h2 {
     font-weight: 400;
     font-size: 50px;
     line-height: 60px;
+    position: relative;
+    color: $bunker;
+
+    &::before {
+        content: '';
+        width: 100px;
+        height: 0;
+        border: 1px solid $bunker;
+        top: 28px;
+        left: -121px;
+        display: block;
+        position: absolute;
+    }
+}
+
+.h2--white {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    position: relative;
+    color: $white;
+
+    &::before {
+        content: '';
+        width: 100px;
+        height: 0;
+        border: 1px solid $white;
+        top: 28px;
+        left: -121px;
+        display: block;
+        position: absolute;
+    }
 }
 
 p {
