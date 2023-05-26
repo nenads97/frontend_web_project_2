@@ -8,7 +8,7 @@
 
 .products__background-mask {
     background-color: $bunker-dark;
-    padding-top: 100px;
+    padding-top: 99px;
     position: relative;
 }
 
@@ -19,13 +19,18 @@
     position: relative;
 }
 
+.products__img-wrap--large {
+    width: 585px;
+    height: 585px;
+}
+
 .products__price {
     font-family: 'Joane';
     font-weight: 700;
     font-size: 20px;
     line-height: 40px;
     text-align: center;
-    width: 100px;
+    width: 99px;
     padding: 14px 14px 13px 16px;
     background-color: $bunker;
     position: absolute;
@@ -34,7 +39,17 @@
     color: $white;
 }
 
+.products__price--large {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 68px;
+    text-align: center;
+    width: 139px;
+    height: 94px;
+}
+
 .products__background-img {
+    @extend %bg-img;
     width: 100%;
     height: 100%;
 }
@@ -46,5 +61,67 @@
 
 .products__table {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.products__item {
+    display: inline-flex;
+    margin-bottom: 30px;
+}
+
+.products__item--large {
+    display: block;
+}
+
+.products__text-wrap {
+    width: 307px;
+    background-color: $old-lace;
+    padding: 23px 30px 41px;
+    height: 278px;
+}
+
+.products__text-wrap--large {
+    width: 585px;
+    height: unset;
+    padding-top: 13px;
+    padding-bottom: 36px;
+}
+
+.products__main-title {
+    display: inline-block;
+    margin-bottom: 49px;
+}
+
+.products__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 60px;
+    padding-bottom: 4px;
+    font-family: 'Joane';
+}
+
+.products__title--large {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 87px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.products__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $bunker-paragraph;
+    padding-bottom: 23px;
+}
+
+.products__text--large {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
 }
