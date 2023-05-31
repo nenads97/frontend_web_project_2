@@ -6,6 +6,7 @@ files:
     - 'src/scss/config/iconfont-template/*.scss'
     - 'src/scss/config/_iconfont.scss'
     - 'src/scss/config/_reset.scss'
+    - 'src/scss/vendors/*.scss'
   include: '**/*.s+(a|c)ss'
 rules:
   # Extends

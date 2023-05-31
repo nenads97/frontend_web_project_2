@@ -26,8 +26,16 @@ iconfont Webfont
     -moz-osx-font-smoothing: grayscale;
 }
 
- .icon-arrow::before {
+ .icon-arrow-left::before {
             content: '\ea01';
+        }
+
+         .icon-arrow-right::before {
+            content: '\ea02';
+        }
+
+         .icon-arrow::before {
+            content: '\ea03';
         }
 
         
