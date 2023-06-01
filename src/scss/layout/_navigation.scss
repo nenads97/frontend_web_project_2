@@ -20,6 +20,8 @@
         &::after {
             content: '';
             display: block;
+            position: absolute;
+            width: 100%;
             border: 1px solid $tacao;
         }
     }
@@ -39,4 +41,5 @@
 
 .nav__list-link {
     text-decoration: none;
+    position: relative;
 }

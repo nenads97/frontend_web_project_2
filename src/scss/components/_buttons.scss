@@ -93,6 +93,10 @@
     text-transform: uppercase;
     background-color: $mondo;
     padding: 18px 15px;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
 .banner {
@@ -108,7 +112,6 @@
     color: $bunker;
     padding-bottom: 28px;
     display: block;
-    width: 86px;
 
     &:hover {
         opacity: 0.7;
@@ -125,6 +128,7 @@
 .products__btn-link {
     display: block;
     text-decoration: none;
+    width: 86px;
 }
 
 .products__btn-link--large {
@@ -155,4 +159,22 @@
         transform: TranslateY(2px);
     }
 
+}
+
+.btn-input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    color: $tacao;
+    border: 1px solid $tacao;
+    background-color: transparent;
+    width: 135px;
+    height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }

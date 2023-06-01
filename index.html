@@ -15,10 +15,11 @@
         <div class="header__background-img" style="background-image: url('images/nav-background.png')">
             <div class="wrapper">
                 <div class="header__logo">
-                    <img class="header__logo-img" src="images/big-ben-logo.png" alt="big-ben-logo error">
+                    <a class="header__logo-link" href="javascript:;"><img class="header__logo-img"
+                            src="images/big-ben-logo.png" alt="big-ben-logo error"></a>
                 </div>
             </div>
-            <div class="header__thin-line"></div>
+            <span class="header__thin-line"></span>
             <div class="wrapper">
                 <nav class="nav">
                     <ul class="nav__list">
@@ -107,13 +108,15 @@
                         <div class="products__col">
                             <div class="products__row">
                                 <div class="products__item products__item--large">
-                                    <div class="products__img-wrap products__img-wrap--large">
-                                        <div class="products__background-img products__background-img--large"
-                                            style="background-image: url('images/products_img1.png');"></div>
-                                        <div class="products__price products__price--large">
-                                            $3.210
+                                    <a href="javascript:;" class="products__img-link">
+                                        <div class="products__img-wrap products__img-wrap--large">
+                                            <div class="products__background-img products__background-img--large"
+                                                style="background-image: url('images/products_img1.png');"></div>
+                                            <div class="products__price products__price--large">
+                                                $3.210
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class="products__text-wrap products__text-wrap--large">
                                         <div class="products__title products__title--large">
                                             Patek Philippe
@@ -137,13 +140,15 @@
                         <div class="products__col">
                             <div class="products__row">
                                 <div class="products__item">
-                                    <div class="products__img-wrap">
-                                        <div class="products__background-img"
-                                            style="background-image: url('images/products_img2.png');"></div>
-                                        <div class="products__price">
-                                            $4.420
+                                    <a href="javascript:;" class="products__img-link">
+                                        <div class="products__img-wrap">
+                                            <div class="products__background-img"
+                                                style="background-image: url('images/products_img2.png');"></div>
+                                            <div class="products__price">
+                                                $4.420
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class="products__text-wrap">
                                         <div class="products__title">
                                             Patek Philippe
@@ -163,13 +168,15 @@
                             </div>
                             <div class="products__row">
                                 <div class="products__item">
-                                    <div class="products__img-wrap">
-                                        <div class="products__background-img"
-                                            style="background-image: url('images/products_img3.png');"></div>
-                                        <div class="products__price">
-                                            $2.380
+                                    <a href="javascript:;" class="products__img-link">
+                                        <div class="products__img-wrap">
+                                            <div class="products__background-img"
+                                                style="background-image: url('images/products_img3.png');"></div>
+                                            <div class="products__price">
+                                                $2.380
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class="products__text-wrap">
                                         <div class="products__title">
                                             Omega De Ville
@@ -189,13 +196,15 @@
                             </div>
                             <div class="products__row">
                                 <div class="products__item">
-                                    <div class="products__img-wrap">
-                                        <div class="products__background-img"
-                                            style="background-image: url('images/products_img4.png');"></div>
-                                        <div class="products__price">
-                                            $5.190
+                                    <a href="javascript:;" class="products__img-link">
+                                        <div class="products__img-wrap">
+                                            <div class="products__background-img"
+                                                style="background-image: url('images/products_img4.png');"></div>
+                                            <div class="products__price">
+                                                $5.190
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class="products__text-wrap">
                                         <div class="products__title">
                                             Breitling Montbrill...
@@ -305,6 +314,61 @@
 
             </div>
     </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__info">
+                <a class="footer__img-link" href="javascript:;">
+                    <img class="footer__img" src="images/footer_logo.png" alt="footer_logo_error" class="footer__logo">
+                </a>
+                <a class="footer__number-link" href="javascript:;">
+                    <span class="footer__number footer__text">+1 96 541231547</span>
+                </a>
+                <span class="footer__location footer__text">24 Washington Lane, Chicago, IL</span>
+            </div>
+            <span class="footer__line"></span>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <a class="footer__list-link footer__margin-right" href="javascript:;">
+                        <li class="footer__list-item">Home</li>
+                    </a>
+                    <a class="footer__list-link footer__margin" href="javascript:;">
+                        <li class="footer__list-item">About Us</li>
+                    </a>
+                    <a class="footer__list-link footer__margin" href="javascript:;">
+                        <li class="footer__list-item">New Arrivals</li>
+                    </a>
+                    <a class="footer__list-link footer__margin" href="javascript:;">
+                        <li class="footer__list-item">Testimonials</li>
+                    </a>
+                    <a class="footer__list-link footer__margin-left" href="javascript:;">
+                        <li class="footer__list-item">Contact</li>
+                    </a>
+                </ul>
+            </nav>
+
+            <form action="javascript:;" class="footer__form">
+                <input class="form__name input js-input" type="text" placeholder="Name Surname">
+                <input class="form__mail input js-input" type="text" placeholder="E-mail">
+                <input class="form__message input input--long js-input" type="text" placeholder="Write your message">
+                <input class="form__button btn-input" type="button" value="SEND">
+            </form>
+            <ul class="footer__end">
+                <li class="footer__end-item footer__end-item--first">All rights served © Big Ben 2020</li>
+                <li class="footer__end-item footer__end-item--middle"><a class="footer__end-item__link"
+                        href="javascript:;">Privacy policy</a></li>
+                <li class="footer__end-item footer__end-item--last"><a class="footer__end-item__link"
+                        href="javascript:;">Terms of service</a></li>
+            </ul>
+            <!-- <div class="footer__end">
+                <span class="footer__rights">All rights served © Big Ben 2020</span>
+                <span class="footer__policy">Privacy policy</span>
+                <span class="footer__service">Terms of service</span>
+            </div> -->
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
 </body>
