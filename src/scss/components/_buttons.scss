@@ -102,6 +102,11 @@
 .banner {
     .btn {
         margin-bottom: 172px;
+
+        @include breakpoint(tablet) {
+            margin-bottom: 150px;
+            display: block;
+        }
     }
 }
 
@@ -168,7 +173,7 @@
     color: $tacao;
     border: 1px solid $tacao;
     background-color: transparent;
-    width: 135px;
+    width: 11.25%;
     height: 50px;
     display: inline-block;
     cursor: pointer;

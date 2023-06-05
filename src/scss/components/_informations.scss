@@ -8,8 +8,13 @@
 .info__imgs {
     position: relative;
     display: inline-block;
-    width: 50%;
-    margin-left: 5px;
+    width: 59%;
+
+    @include breakpoint (tablet) {
+        display: block;
+        margin: 0 auto;
+        width: 587px;
+    }
 }
 
 .info__img-2 {
@@ -19,10 +24,19 @@
 }
 
 .info__content {
-    max-width: 482px;
-    float: right;
+    padding-left: 2px;
+    max-width: 40%;
+    display: inline-block;
+    vertical-align: top;
     position: relative;
-    transform: translateX(-5px);
+    transform: translateX(3px);
+
+    @include breakpoint (tablet) {
+        display: block;
+        margin: 0 auto;
+        padding-top: 70px;
+        float: unset;
+    }
 }
 
 .info__title {

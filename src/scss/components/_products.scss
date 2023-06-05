@@ -61,6 +61,10 @@
 .products__col {
     display: flex;
     flex-direction: column;
+
+    @include breakpoint(1209px) {
+        flex-direction: row;
+    }
 }
 
 .products__table {
@@ -69,6 +73,10 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 90px;
+
+    @include breakpoint(1209px) {
+        justify-content: space-around;
+    }
 }
 
 .products__item {
@@ -128,4 +136,14 @@
     font-size: 20px;
     line-height: 38px;
     text-align: center;
+}
+
+.swiper-wrapper {
+    @include breakpoint(1209px) {
+        width: 585px;
+    }
+}
+
+.swiper1 {
+    overflow: hidden;
 }

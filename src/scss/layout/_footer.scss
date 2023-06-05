@@ -107,6 +107,8 @@
 
 .footer__form {
     margin-bottom: 59px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .input {
@@ -116,17 +118,17 @@
     color: $white;
     border: 1px solid $old-lace-light;
     display: inline-block;
-    width: 285px;
+    width: 23.75%;
     height: 50px;
     background-color: $shark;
     padding-left: 14px;
-    margin-right: 16px;
+    margin-right: 1.33%;
 
 }
 
 .input--long {
-    width: 422px;
-    margin-right: 28px;
+    width: 35.17%;
+    margin-right: 2.33%;
 }
 
 .on-focus {

@@ -30,6 +30,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: right;
+
+    @include breakpoint (1209px) {
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        text-align: center;
+    }
 }
 
 .testimonials__quotation-mark {
@@ -46,7 +53,6 @@
 
 .testimonials__text {
     padding: 83px 0 48px 0;
-    text-align: right;
     padding-top: 16px;
 }
 
@@ -66,6 +72,11 @@
         height: 14px;
         display: inline-block;
         background-color: $bunker;
+    }
+
+    @include breakpoint(1209px) {
+        right: 50%;
+        transform: translateX(50%);
     }
 }
 

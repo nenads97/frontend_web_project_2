@@ -10,6 +10,11 @@
     padding-top: 152px;
     padding-bottom: 23px;
     color: $white;
+
+    @include breakpoint(tablet) {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 .banner__text {
@@ -21,18 +26,30 @@
     color: $white;
     opacity: 0.7;
     transform: translateY(-2px);
+
+    @include breakpoint(tablet) {
+        text-align: center;
+        margin: 0 auto;
+        max-width: unset;
+        padding-bottom: 82px;
+    }
 }
 
 .banner__content {
     max-width: 600px;
     position: relative;
     z-index: 2;
+
+    @include breakpoint(tablet) {
+        margin: 0 auto;
+    }
 }
 
-.banner__img {
+.banner__background {
     @extend %bg-img;
     position: absolute;
     top: 0;
     right: 0;
-    padding-bottom: 67.04%;
+    height: 100%;
+    width: 1041px;
 }
