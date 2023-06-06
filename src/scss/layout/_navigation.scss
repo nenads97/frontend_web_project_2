@@ -1,11 +1,32 @@
 .nav {
     transform: translate(-1px, -26px);
+
+    @include breakpoint(phone) {
+        position: absolute;
+        top: 93px;
+        left: 0;
+        width: 100%;
+        z-index: 20;
+        float: none;
+        text-align: center;
+        padding-top: 20px;
+        border-bottom: 1px solid $black;
+        display: none;
+        background-color: $silver;
+    }
 }
 
 .nav__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @include breakpoint(phone) {
+        padding: 20px 40px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .nav__list-item {
@@ -25,21 +46,39 @@
             border: 1px solid $tacao;
         }
     }
+
+    @include breakpoint(phone) {
+        display: block;
+        margin-left: 0;
+    }
 }
 
 .nav__margin {
     margin: 0 34px;
+
+    @include breakpoint(phone) {
+        margin: 0;
+    }
 }
 
 .nav__margin-left {
     margin-left: 34px;
+
+    @include breakpoint(phone) {
+        margin: 0;
+    }
 }
 
 .nav__margin-right {
     margin-right: 34px;
+
+    @include breakpoint(phone) {
+        margin: 0;
+    }
 }
 
 .nav__list-link {
     text-decoration: none;
     position: relative;
+    margin-bottom: 30px;
 }

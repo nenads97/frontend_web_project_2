@@ -107,6 +107,12 @@
             margin-bottom: 150px;
             display: block;
         }
+
+        @include breakpoint(phone) {
+            max-width: 458px;
+            display: block;
+            margin-bottom: 50px;
+        }
     }
 }
 

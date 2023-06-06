@@ -86,6 +86,10 @@
 
 .products__item--large {
     display: block;
+
+    @include breakpoint(phone) {
+        display: none;
+    }
 }
 
 .products__text-wrap {

@@ -15,6 +15,17 @@
         text-align: center;
         margin: 0 auto;
     }
+
+    @include breakpoint(phone) {
+        text-align: left;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 60px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        max-width: 69.1%;
+
+    }
 }
 
 .banner__text {
@@ -32,6 +43,15 @@
         margin: 0 auto;
         max-width: unset;
         padding-bottom: 82px;
+    }
+
+    @include breakpoint(phone) {
+        text-align: left;
+        padding-bottom: 25px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $grey;
     }
 }
 
@@ -52,4 +72,12 @@
     right: 0;
     height: 100%;
     width: 1041px;
+
+    @include breakpoint(phone) {
+        top: -236px;
+        right: -440px;
+        height: 200%;
+        overflow: hidden;
+        scale: 0.5;
+    }
 }

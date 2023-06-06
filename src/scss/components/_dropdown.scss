@@ -1,0 +1,58 @@
+.toggle {
+    @include breakpoint(phone) {
+        display: block;
+        width: 18px;
+        height: 21px;
+        position: absolute;
+        top: 22px;
+        right: 20px;
+        border: 0;
+        background-color: transparent;
+        transform: rotate(180deg);
+    }
+}
+
+.toggle-open {
+    .toggle-line {
+        background-color: transparent;
+
+        &::before {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+
+        &::after {
+            top: 0;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.toggle-line {
+    width: 14px;
+    height: 2px;
+    background-color: $mine-shaft;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    &::before,
+    &::after {
+        content: '';
+        width: 19px;
+        height: 2px;
+        background-color: $mine-shaft;
+        position: absolute;
+        left: 0;
+    }
+
+    &::before {
+        top: -6px;
+    }
+
+    &::after {
+        top: 6px;
+    }
+
+}

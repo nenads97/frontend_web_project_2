@@ -80,7 +80,7 @@ function addGradient(url) {
 
     $(window).on('resize load', function () {    //osluškujemo širinu ekrana i svaki put kad smanjimo ili povećamo ekran trigeruje se ovaj događaj
         if ($(window).width() <= 1024) {
-            $gradient.css('background', `linear-gradient(193.35deg, rgba(0, 3, 8, 0) 3.18%, rgba(0, 3, 8, 0.6) 56.87%), ${url}`);
+            $gradient.css('background', `linear-gradient(193.35deg, rgba(0, 3, 8, 0) 3.18%, rgba(0, 3, 8, 1) 56.87%), ${url}`);
         } else {
             $gradient.css('background', url)
         }
@@ -102,7 +102,21 @@ function centerTable() {
     });
 }
 
+function changeLogoForPhone() {
+    var $logo = $('.header__logo-img')
 
+    $(window).on('resize load', function () {
+        if ($(window).width() <= 767) {
+            $logo.attr('src', 'images/phone/logo_phone.png');
+        }
+        else {
+            $logo.attr('src', 'images/big-ben-logo.png');
+        }
+    })
+}
+
+changeLogoForPhone();
+nav();
 inputOnFocus();
 addGradient(borderUrl);
 centerTable();
