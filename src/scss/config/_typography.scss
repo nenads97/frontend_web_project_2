@@ -25,16 +25,20 @@ h2 {
     line-height: 60px;
     position: relative;
     color: $bunker;
+}
 
-    &::before {
-        content: '';
-        width: 100px;
-        height: 0;
-        border: 1px solid $bunker;
-        top: 28px;
-        left: -121px;
-        display: block;
-        position: absolute;
+.title-line {
+    width: 100px;
+    height: 0;
+    border: 1px solid $bunker;
+    display: inline-block;
+    transform: translateY(-16px);
+    margin-right: 20px;
+
+    @include breakpoint(phone) {
+        width: 50px;
+        transform: translateY(-10px);
+        margin-right: 16px;
     }
 }
 
@@ -44,22 +48,34 @@ h2 {
     line-height: 60px;
     position: relative;
     color: $white;
+}
 
-    &::before {
-        content: '';
-        width: 100px;
-        height: 0;
-        border: 1px solid $white;
-        top: 28px;
-        left: -121px;
-        display: block;
-        position: absolute;
+.title-line--white {
+    width: 100px;
+    height: 0;
+    border: 1px solid $white;
+    display: inline-block;
+    transform: translateY(-10px);
+    padding-right: 20px;
+
+    @include breakpoint(phone) {
+        width: 50px;
+        transform: translateY(-10px);
+        margin-right: 16px;
     }
 }
 
 p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15.98px;
     line-height: 26px;
     color: $bunker-paragraph;
+}
+
+.title-wrap {
+    display: inline-block;
+
+    @include breakpoint(phone) {
+        display: block;
+    }
 }

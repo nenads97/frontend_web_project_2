@@ -80,5 +80,8 @@
 .nav__list-link {
     text-decoration: none;
     position: relative;
-    margin-bottom: 30px;
+
+    @include breakpoint(phone) {
+        margin-bottom: 30px;
+    }
 }

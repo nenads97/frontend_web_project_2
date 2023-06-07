@@ -15,35 +15,33 @@
         <div class="header__background-img" style="background-image: url('images/nav-background.png')">
             <div class="wrapper">
                 <div class="header__logo">
-                    <a class="header__logo-link" href="javascript:;"><img class="header__logo-img"
+                    <a class="header__logo-link" href="javascript:;"><img class="header__logo-img js-header-img"
                             src="images/big-ben-logo.png" alt="big-ben-logo error"></a>
                 </div>
             </div>
             <span class="header__thin-line"></span>
-            <div class="wrapper">
-                <nav class="nav js-nav">
-                    <ul class="nav__list">
-                        <a class="nav__list-link nav__margin-right" href="javascript:;">
-                            <li class="nav__list-item">Home</li>
-                        </a>
-                        <a class="nav__list-link nav__margin" href="javascript:;">
-                            <li class="nav__list-item">About Us</li>
-                        </a>
-                        <a class="nav__list-link nav__margin" href="javascript:;">
-                            <li class="nav__list-item">New Arrivals</li>
-                        </a>
-                        <a class="nav__list-link nav__margin" href="javascript:;">
-                            <li class="nav__list-item">Testimonials</li>
-                        </a>
-                        <a class="nav__list-link nav__margin-left" href="javascript:;">
-                            <li class="nav__list-item">Contact</li>
-                        </a>
-                    </ul>
-                </nav>
-                <button type="button" class="toggle js-toggle">
-                    <span class="toggle-line"></span>
-                </button>
-            </div>
+            <nav class="nav js-nav">
+                <ul class="nav__list">
+                    <a class="nav__list-link nav__margin-right" href="javascript:;">
+                        <li class="nav__list-item">Home</li>
+                    </a>
+                    <a class="nav__list-link nav__margin" href="javascript:;">
+                        <li class="nav__list-item">About Us</li>
+                    </a>
+                    <a class="nav__list-link nav__margin" href="javascript:;">
+                        <li class="nav__list-item">New Arrivals</li>
+                    </a>
+                    <a class="nav__list-link nav__margin" href="javascript:;">
+                        <li class="nav__list-item">Testimonials</li>
+                    </a>
+                    <a class="nav__list-link nav__margin-left" href="javascript:;">
+                        <li class="nav__list-item">Contact</li>
+                    </a>
+                </ul>
+            </nav>
+            <button type="button" class="toggle js-toggle">
+                <span class="toggle-line"></span>
+            </button>
         </div>
     </header>
     <div class="banner">
@@ -68,12 +66,15 @@
     <section class="info">
         <div class="info__background" style="background-image: url('images/informations_background.png');">
             <div class="wrapper">
-                <div class="info__imgs">
-                    <img class="info__img-1" src="images/informations_img1.png" alt="info__img-error">
-                    <img class="info__img-2" src="images/informations_img2.png" alt="info__img-error">
+                <div class="info__imgs js-imgs">
+                    <img class="info__img-1 js-phone-img" src="images/informations_img1.png" alt="info__img-error">
+                    <img class="info__img-2 js-img2" src="images/informations_img2.png" alt="info__img-error">
                 </div>
                 <div class="info__content">
-                    <h2 class="info__title">About Us</h2>
+                    <div class="title-wrap">
+                        <span class="title-line"></span>
+                        <h2 class="info__title">About Us</h2>
+                    </div>
                     <p class="info__text">There are many variations of passages of Lorem Ipsum available, but the
                         majority have suffered alteration in some form, by injected humour, or randomised words which
                         don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need
@@ -84,7 +85,7 @@
                         words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
                         reasonable.
                     </p>
-                    <p class="info__text">
+                    <p class="info__text js-info__text">
                         The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
                         non-characteristic words etc.
                     </p>
@@ -95,6 +96,8 @@
                         <span class="icon-arrow icon"></span>
                     </a>
                 </div>
+                <div class="info__img js-info-img">
+                </div>
             </div>
         </div>
     </section>
@@ -103,7 +106,10 @@
         <div class="products__background" style="background-image: url('images/products_background.png');">
             <div class="products__background-mask">
                 <div class="wrapper clearfix">
-                    <h2 class="products__main-title h2--white">New Arrivals</h2>
+                    <div class="title-wrap">
+                        <span class="title-line title-line--white"></span>
+                        <h2 class="products__main-title h2--white">New Arrivals</h2>
+                    </div>
                     <a href="javascript:;" class="btn2__link clearfix">
                         <div class="btn2 btn2--white products__btn2">view all</div>
                         <span class="icon-arrow icon--short icon"></span>

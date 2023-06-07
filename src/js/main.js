@@ -102,20 +102,41 @@ function centerTable() {
     });
 }
 
-function changeLogoForPhone() {
-    var $logo = $('.header__logo-img')
+function changePicturesForPhone() {
+    var $logo = $('.js-header-img');
+    var $blueWatch = $('.js-phone-img');
 
     $(window).on('resize load', function () {
         if ($(window).width() <= 767) {
             $logo.attr('src', 'images/phone/logo_phone.png');
+            $blueWatch.attr('src', 'images/phone/blue-watch_phone.png');
         }
         else {
             $logo.attr('src', 'images/big-ben-logo.png');
+            $blueWatch.attr('src', 'images/informations_img1.png');
         }
-    })
+    });
 }
 
-changeLogoForPhone();
+function moveElement() {
+    var container = $('.js-imgs');
+    var element = $('.js-img2');
+    var newContainer = $('.js-info-img');
+    var paragraph = $('.js-info__text');
+
+    $(window).on('resize load', function () {
+        if ($(window).width() <= 767) {
+            element.detach().appendTo(newContainer);
+            paragraph.hide();
+        } else {
+            element.detach().appendTo(container);
+            paragraph.show();
+        }
+    });
+}
+
+moveElement();
+changePicturesForPhone();
 nav();
 inputOnFocus();
 addGradient(borderUrl);

@@ -8,6 +8,7 @@
 }
 
 .btn2 {
+    margin-left: 120px;
     display: block;
     font-weight: 400;
     font-size: 18px;
@@ -32,6 +33,11 @@
         top: 0px;
         right: 17px;
     }
+
+    @include breakpoint(phone) {
+        margin-left: 0;
+        margin-top: 17px;
+    }
 }
 
 .products__btn2 {
@@ -45,6 +51,10 @@
         border: 1px solid $tacao;
         top: 0px;
         right: 20px;
+    }
+
+    @include breakpoint(phone) {
+        display: none;
     }
 }
 
@@ -82,6 +92,10 @@
 .icon--short {
     top: 10px;
     right: -6px;
+
+    @include breakpoint(phone) {
+        display: none;
+    }
 }
 
 .btn__text {
@@ -147,6 +161,10 @@
     width: 107px;
     margin: 0 auto;
     transform: translate(-3.5px, -5px);
+
+    @include breakpoint(phone) {
+        margin: 0;
+    }
 }
 
 .products__button--large {

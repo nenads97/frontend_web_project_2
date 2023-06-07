@@ -10,6 +10,10 @@
     background-color: $bunker-dark;
     padding-top: 99px;
     position: relative;
+
+    @include breakpoint(phone) {
+        padding-top: 30px;
+    }
 }
 
 .products__img-wrap {
@@ -26,6 +30,11 @@
 .products__img-wrap--large {
     width: 585px;
     height: 585px;
+
+    @include breakpoint(phone) {
+        width: 335px;
+        height: 335px;
+    }
 }
 
 .products__price {
@@ -41,6 +50,8 @@
     bottom: 0;
     right: 0;
     color: $white;
+
+
 }
 
 .products__price--large {
@@ -50,6 +61,14 @@
     text-align: center;
     width: 139px;
     height: 94px;
+
+    @include breakpoint(phone) {
+        font-size: 18px;
+        line-height: 18px;
+        padding: 21px 14px 20px 13px;
+        width: 87px;
+        height: 59px;
+    }
 }
 
 .products__background-img {
@@ -87,9 +106,7 @@
 .products__item--large {
     display: block;
 
-    @include breakpoint(phone) {
-        display: none;
-    }
+    @include breakpoint(phone) {}
 }
 
 .products__text-wrap {
@@ -97,6 +114,10 @@
     background-color: $old-lace;
     padding: 23px 30px 41px;
     height: 278px;
+
+    @include breakpoint(phone) {
+        padding: 25px 20px;
+    }
 }
 
 .products__text-wrap--large {
@@ -104,11 +125,22 @@
     height: unset;
     padding-top: 13px;
     padding-bottom: 36px;
+
+    @include breakpoint(phone) {
+        width: 335px;
+        padding: 25px 20px;
+    }
 }
 
 .products__main-title {
     display: inline-block;
     margin-bottom: 49px;
+
+    @include breakpoint(phone) {
+        font-size: 36px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
 }
 
 .products__title {
@@ -117,6 +149,11 @@
     line-height: 60px;
     padding-bottom: 4px;
     font-family: 'Joane';
+
+    @include breakpoint(phone) {
+        font-size: 24px;
+        line-height: 18px;
+    }
 }
 
 .products__title--large {
@@ -125,6 +162,13 @@
     line-height: 87px;
     text-align: center;
     padding-bottom: 12px;
+
+    @include breakpoint(phone) {
+        font-size: 24px;
+        line-height: 18px;
+        text-align: left;
+        padding: 25px 0;
+    }
 }
 
 .products__text {
@@ -140,6 +184,12 @@
     font-size: 20px;
     line-height: 38px;
     text-align: center;
+
+    @include breakpoint(phone) {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: left;
+    }
 }
 
 .swiper-wrapper {

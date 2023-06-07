@@ -1,19 +1,45 @@
+.info {
+    @include breakpoint(phone) {
+        position: relative;
+        background-color: $silver;
+    }
+}
+
 .info__background {
     @extend %bg-img;
     padding-top: 110px;
     padding-bottom: 116px;
     overflow: hidden;
+
+    @include breakpoint(phone) {
+        padding-top: 35px;
+        padding-bottom: 0;
+    }
 }
 
 .info__imgs {
     position: relative;
     display: inline-block;
-    width: 59%;
+    width: 49%;
 
     @include breakpoint (tablet) {
         display: block;
         margin: 0 auto;
         width: 587px;
+    }
+
+    @include breakpoint (phone) {
+        position: unset;
+        display: unset;
+        width: unset;
+    }
+}
+
+.info__img-1 {
+    @include breakpoint(phone) {
+        display: block;
+        padding-bottom: 35px;
+        margin: 0 auto;
     }
 }
 
@@ -21,11 +47,21 @@
     position: absolute;
     top: 109px;
     left: 246px;
+
+    @include breakpoint(phone) {
+        position: unset;
+        top: unset;
+        left: unset;
+        display: block;
+        margin: 36px auto 42px;
+        width: 335px;
+        height: 308px;
+    }
 }
 
 .info__content {
     padding-left: 2px;
-    max-width: 40%;
+    max-width: 50%;
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -37,12 +73,37 @@
         padding-top: 70px;
         float: unset;
     }
+
+    @include breakpoint (phone) {
+        max-width: 100%;
+        transform: unset;
+    }
 }
 
 .info__title {
     padding-bottom: 36.17px;
+    position: relative;
+    display: inline-block;
+
+    @include breakpoint(phone) {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 60px;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
 }
 
 .info__text {
     padding-bottom: 16.59px;
+    margin-left: 120px;
+
+    @include breakpoint(tablet) {
+        margin-left: 0;
+    }
+
+    @include breakpoint(phone) {
+        margin-left: 0;
+    }
 }

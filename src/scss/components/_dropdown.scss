@@ -1,4 +1,6 @@
 .toggle {
+    display: none;
+
     @include breakpoint(phone) {
         display: block;
         width: 18px;
