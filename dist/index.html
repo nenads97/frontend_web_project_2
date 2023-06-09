@@ -85,7 +85,7 @@
                         words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
                         reasonable.
                     </p>
-                    <p class="info__text js-info__text">
+                    <p class="info__text hide-words">
                         The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
                         non-characteristic words etc.
                     </p>
@@ -164,7 +164,7 @@
                                             <div class="products__title">
                                                 Patek Philippe
                                             </div>
-                                            <div class="products__text">
+                                            <div class="products__text products__text--small">
                                                 There are many variations of passages of Lorem Ipsum available, but the
                                                 majority
                                                 have suffered alteration in some form.
@@ -192,7 +192,7 @@
                                             <div class="products__title">
                                                 Omega De Ville
                                             </div>
-                                            <div class="products__text">
+                                            <div class="products__text products__text--small">
                                                 If you are going to use a passage of Lorem Ipsum, you need to be sure
                                                 there
                                                 isn't
@@ -221,7 +221,7 @@
                                             <div class="products__title">
                                                 Breitling Montbrill...
                                             </div>
-                                            <div class="products__text">
+                                            <div class="products__text products__text--small">
                                                 It uses a dictionary of over 200 Latin words, combined with a handful of
                                                 model
                                                 sentence structures.
@@ -245,10 +245,12 @@
     <section class="testimonials">
         <div class="testimonials__background" style="background-image: url('images/testimonials_background.png');">
             <div class="wrapper">
-                <h2 class="testimonials__title">
-                    Testimonials
-                </h2>
-
+                <div class="title-wrap title-wrap--test">
+                    <span class="title-line title-line-test"></span>
+                    <h2 class="testimonials__title">
+                        Testimonials
+                    </h2>
+                </div>
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -260,7 +262,7 @@
                                         predefined chunks as necessary, making this the first true generator on the
                                         Internet. It
                                         uses a
-                                        dictionary of over 200 Latin words.
+                                        dictionary of over 200 Latin<span class="hide-words">words.</span>
                                     </p>
                                     <span class="testimonials__info">Brooklyn, New York</span>
                                 </div>
@@ -277,7 +279,7 @@
                                         predefined chunks as necessary, making this the first true generator on the
                                         Internet. It
                                         uses a
-                                        dictionary of over 200 Latin words.
+                                        dictionary of over 200 Latin<span class="hide-words">words.</span>
                                     </p>
                                     <span class="testimonials__info">Brooklyn, New York</span>
                                 </div>
@@ -294,7 +296,7 @@
                                         predefined chunks as necessary, making this the first true generator on the
                                         Internet. It
                                         uses a
-                                        dictionary of over 200 Latin words.
+                                        dictionary of over 200 Latin<span class="hide-words">words.</span>
                                     </p>
                                     <span class="testimonials__info">Brooklyn, New York</span>
                                 </div>
@@ -311,7 +313,7 @@
                                         predefined chunks as necessary, making this the first true generator on the
                                         Internet. It
                                         uses a
-                                        dictionary of over 200 Latin words.
+                                        dictionary of over 200 Latin<span class="hide-words">words.</span>
                                     </p>
                                     <span class="testimonials__info">Brooklyn, New York</span>
                                 </div>
@@ -323,6 +325,7 @@
                     <div class="swiper-pagination"></div>
                     <div class="icon-arrow-left icon-left"></div>
                     <div class="icon-arrow-right icon-right"></div>
+                    <div class="icon-arrow-right2 icon-right2"></div>
                 </div>
 
             </div>
@@ -367,10 +370,11 @@
                 <input class="form__button btn-input" type="button" value="SEND">
             </form>
             <ul class="footer__end">
-                <li class="footer__end-item footer__end-item--first">All rights served © Big Ben 2020</li>
-                <li class="footer__end-item footer__end-item--middle"><a class="footer__end-item__link"
+                <li class="footer__end-item footer__end-item--first js-footer-first">All rights served © Big Ben 2020
+                </li>
+                <li class="footer__end-item footer__end-item--middle js-footer-middle"><a class="footer__end-item__link"
                         href="javascript:;">Privacy policy</a></li>
-                <li class="footer__end-item footer__end-item--last"><a class="footer__end-item__link"
+                <li class="footer__end-item footer__end-item--last js-footer-last"><a class="footer__end-item__link"
                         href="javascript:;">Terms of service</a></li>
             </ul>
             <!-- <div class="footer__end">

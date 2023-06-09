@@ -148,6 +148,21 @@
         border: 1px solid $tacao;
         transform: TranslateY(-3px);
     }
+
+    @include breakpoint(phone) {
+        font-size: 12px;
+        line-height: 10px;
+        padding-bottom: 0;
+
+        &::after {
+            content: '';
+            display: block;
+            border: 1px solid $tacao;
+            width: 63px;
+            transform: unset;
+        }
+
+    }
 }
 
 .products__btn-link {
@@ -182,6 +197,7 @@
     }
 
     &::after {
+        width: 107px;
         content: '';
         display: block;
         border: 1px solid $tacao;
@@ -205,5 +221,10 @@
 
     &:hover {
         opacity: 0.7;
+    }
+
+    @include breakpoint(phone) {
+        width: 100%;
+        max-width: 400px;
     }
 }

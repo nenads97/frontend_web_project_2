@@ -5,16 +5,41 @@
 .testimonials__background {
     @extend %bg-img;
     padding-top: 100px;
+
+    @include breakpoint(phone) {
+        padding-top: 30px;
+        background-color: $silver;
+    }
 }
 
 .testimonials__title {
     text-align: center;
     padding-bottom: 62px;
-    display: block;
+    display: inline-block;
     width: 307px;
     margin: 0 auto;
     position: relative;
     transform: translateX(7px);
+
+    @include breakpoint(phone) {
+        width: 220px;
+        display: inline-block;
+        font-size: 36px;
+        line-height: 60px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        transform: 0;
+    }
+}
+
+.title-wrap--test {
+    width: 555px;
+    margin: 0 auto;
+    display: block;
+
+    @include breakpoint(phone) {
+        width: 335px;
+    }
 }
 
 .testimonials__content {
@@ -23,6 +48,15 @@
     display: inline-block;
     align-self: flex-start;
     padding-top: 82px;
+
+    @include breakpoint (1209px) {
+        padding-top: 79px;
+        width: 578px;
+    }
+
+    @include breakpoint(phone) {
+        padding-top: 29px;
+    }
 }
 
 .testimonilas__content-wrap {
@@ -37,6 +71,10 @@
         justify-content: space-around;
         text-align: center;
     }
+
+    @include breakpoint(phone) {
+        padding: 0;
+    }
 }
 
 .testimonials__quotation-mark {
@@ -49,11 +87,20 @@
     top: 0;
     left: 0;
     padding-top: 18px;
+
+    @include breakpoint(phone) {
+        font-size: 100px;
+        line-height: 60px;
+    }
 }
 
 .testimonials__text {
-    padding: 83px 0 48px 0;
-    padding-top: 16px;
+    padding: 16px 0 48px 0;
+
+    @include breakpoint(phone) {
+        padding-bottom: 124px;
+        padding-top: 16px;
+    }
 }
 
 .testimonials__info {
@@ -78,6 +125,23 @@
         right: 50%;
         transform: translateX(50%);
     }
+
+    @include breakpoint(phone) {
+        bottom: 88px;
+
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            content: '';
+            margin-right: 5px;
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            background-color: $bunker;
+        }
+    }
 }
 
 .testimonials__profile-pic {
@@ -85,6 +149,11 @@
     width: 279px;
     height: 279px;
     filter: drop-shadow(0px 20px 30px $bunker-medium-light);
+
+    @include breakpoint(phone) {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 .icon-left {
@@ -98,6 +167,11 @@
     &:hover {
         opacity: 0.7;
     }
+
+    @include breakpoint(phone) {
+        top: 62px;
+        left: 0;
+    }
 }
 
 .icon-right {
@@ -110,5 +184,33 @@
 
     &:hover {
         opacity: 0.7;
+    }
+
+    @include breakpoint(phone) {
+        display: none;
+    }
+}
+
+.icon-right2 {
+    display: none;
+
+    @include breakpoint(phone) {
+        display: block;
+        position: absolute;
+        top: 62px;
+        right: 0;
+        color: $tacao;
+        z-index: 1;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.swiper-pagination {
+    @include breakpoint(phone) {
+        bottom: 50px;
     }
 }

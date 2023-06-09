@@ -22,6 +22,19 @@ var swiper = new Swiper('.swiper', {
     scrollbar: {
         el: '.swiper-scrollbar',
     },
+
+    breakpoints: {
+        // When window width is <=767px
+        767: {
+            navigation: {
+                nextEl: '.icon-right2',
+            },
+        },
+    },
+});
+
+window.addEventListener('resize', function () {
+    swiper.update();
 });
 
 var init = false;
@@ -122,7 +135,7 @@ function moveElement() {
     var container = $('.js-imgs');
     var element = $('.js-img2');
     var newContainer = $('.js-info-img');
-    var paragraph = $('.js-info__text');
+    var paragraph = $('.hide-words');
 
     $(window).on('resize load', function () {
         if ($(window).width() <= 767) {
@@ -134,6 +147,27 @@ function moveElement() {
         }
     });
 }
+
+$(document).ready(function () {
+    var firstLi = $('.js-footer-first');
+    var middleLi = $('.js-footer-middle');
+    var lastLi = $('.js-footer-last');
+    var footerEnd = $('.footer__end');
+
+    function reorderLiElements() {
+        if (window.innerWidth <= 767) {
+            footerEnd.append(firstLi);
+        } else {
+            footerEnd.prepend(firstLi);
+        }
+    }
+
+    // Call reorderLiElements on page load
+    reorderLiElements();
+
+    // Call reorderLiElements on window resize
+    $(window).resize(reorderLiElements);
+});
 
 moveElement();
 changePicturesForPhone();

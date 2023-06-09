@@ -42,6 +42,12 @@ h2 {
     }
 }
 
+.title-line-test {
+    @include breakpoint(phone) {
+        margin-right: 9px;
+    }
+}
+
 .h2--white {
     font-weight: 400;
     font-size: 50px;

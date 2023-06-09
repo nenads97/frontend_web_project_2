@@ -257,7 +257,11 @@
 .swiper-pagination-fraction {
     bottom: 98px;
     left: 0;
-    width: 100%
+    width: 100%;
+
+    @include breakpoint(phone) {
+        bottom: 46px;
+    }
 }
 
 .swiper-pagination-bullets-dynamic {

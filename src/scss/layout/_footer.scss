@@ -8,6 +8,10 @@
     display: block;
     margin: 0 auto;
     padding-top: 24px;
+
+    @include breakpoint(phone) {
+        padding-top: 0;
+    }
 }
 
 .footer__img-link {
@@ -16,6 +20,10 @@
     height: 130px;
     margin: 0 auto;
     padding-top: 9px;
+
+    @include breakpoint(phone) {
+        padding-top: 0;
+    }
 }
 
 .footer__img {
@@ -53,6 +61,10 @@
 
 .footer__location {
     margin-bottom: 40px;
+
+    @include breakpoint(phone) {
+        margin-bottom: 25px;
+    }
 }
 
 .footer__line {
@@ -109,6 +121,12 @@
     margin-bottom: 59px;
     display: flex;
     justify-content: space-between;
+
+    @include breakpoint(phone) {
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 
 .input {
@@ -124,11 +142,22 @@
     padding-left: 14px;
     margin-right: 1.33%;
 
+    @include breakpoint(phone) {
+        width: 100%;
+        max-width: 400px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 .input--long {
     width: 35.17%;
     margin-right: 2.33%;
+
+    @include breakpoint(phone) {
+        width: 100%;
+        margin-right: 0;
+    }
 }
 
 .on-focus {
@@ -142,6 +171,10 @@
     text-align: center;
     justify-content: center;
     padding-bottom: 10px;
+
+    @include breakpoint(phone) {
+        padding-bottom: 50px;
+    }
 }
 
 .footer__end-item {
@@ -159,6 +192,11 @@
 
 .footer__end-item--first {
     padding-right: 15px;
+
+    @include breakpoint(phone) {
+        padding-right: 0;
+        border-right: 0;
+    }
 }
 
 .footer__end-item--last {
@@ -169,6 +207,10 @@
     &:hover {
         opacity: 0.7;
     }
+
+    @include breakpoint(phone) {
+        padding-left: 5px;
+    }
 }
 
 .footer__end-item--middle {
@@ -176,5 +218,17 @@
 
     &:hover {
         opacity: 0.7;
+    }
+
+    @include breakpoint(phone) {
+        padding: 0;
+        margin-bottom: 10px;
+        padding-right: 5px;
+    }
+}
+
+.footer__nav {
+    @include breakpoint(phone) {
+        display: none;
     }
 }
