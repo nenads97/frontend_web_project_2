@@ -19,6 +19,7 @@
     @extend %bg-img;
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 2px;
 
     @include breakpoint(phone) {
         padding-top: 15px;

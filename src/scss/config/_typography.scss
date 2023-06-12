@@ -33,7 +33,7 @@ h2 {
     border: 1px solid $bunker;
     display: inline-block;
     transform: translateY(-16px);
-    margin-right: 20px;
+    margin-right: 16px;
 
     @include breakpoint(phone) {
         width: 50px;
@@ -43,8 +43,12 @@ h2 {
 }
 
 .title-line-test {
+    width: 109px;
+    margin-right: 10px;
+
     @include breakpoint(phone) {
         margin-right: 9px;
+        width: 50px;
     }
 }
 

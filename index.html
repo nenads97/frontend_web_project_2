@@ -22,21 +22,20 @@
             <span class="header__thin-line"></span>
             <nav class="nav js-nav">
                 <ul class="nav__list">
-                    <a class="nav__list-link nav__margin-right" href="javascript:;">
-                        <li class="nav__list-item">Home</li>
-                    </a>
-                    <a class="nav__list-link nav__margin" href="javascript:;">
-                        <li class="nav__list-item">About Us</li>
-                    </a>
-                    <a class="nav__list-link nav__margin" href="javascript:;">
-                        <li class="nav__list-item">New Arrivals</li>
-                    </a>
-                    <a class="nav__list-link nav__margin" href="javascript:;">
-                        <li class="nav__list-item">Testimonials</li>
-                    </a>
-                    <a class="nav__list-link nav__margin-left" href="javascript:;">
-                        <li class="nav__list-item">Contact</li>
-                    </a>
+                    <li class="nav__list-item nav__margin-right"><a class="nav__list-link" href="javascript:;"
+                            onclick="scrollToElement('.banner')">Home</a>
+                    </li>
+                    <li class="nav__list-item nav__margin"><a class="nav__list-link" href="javascript:;"
+                            onclick="scrollToElement('.info')">About Us</a>
+                    </li>
+
+                    <li class="nav__list-item nav__margin"><a class="nav__list-link" href="javascript:;"
+                            onclick="scrollToElement('.products')">New
+                            Arrivals</a></li>
+                    <li class="nav__list-item nav__margin"><a class="nav__list-link" href="javascript:;"
+                            onclick="scrollToElement('.testimonials')">Testimonials</a></li>
+                    <li class="nav__list-item nav__margin-left"><a class="nav__list-link" href="javascript:;"
+                            onclick="scrollToElement('.footer')">Contact</a></li>
                 </ul>
             </nav>
             <button type="button" class="toggle js-toggle">
@@ -107,7 +106,7 @@
             <div class="products__background-mask">
                 <div class="wrapper clearfix">
                     <div class="title-wrap">
-                        <span class="title-line title-line--white"></span>
+                        <span class="title-line title-line--white products__title-line"></span>
                         <h2 class="products__main-title h2--white">New Arrivals</h2>
                     </div>
                     <a href="javascript:;" class="btn2__link clearfix">
@@ -262,7 +261,7 @@
                                         predefined chunks as necessary, making this the first true generator on the
                                         Internet. It
                                         uses a
-                                        dictionary of over 200 Latin<span class="hide-words">words.</span>
+                                        dictionary of over 200 Latin<span class="hide-words">words</span>.
                                     </p>
                                     <span class="testimonials__info">Brooklyn, New York</span>
                                 </div>
@@ -279,7 +278,7 @@
                                         predefined chunks as necessary, making this the first true generator on the
                                         Internet. It
                                         uses a
-                                        dictionary of over 200 Latin<span class="hide-words">words.</span>
+                                        dictionary of over 200 Latin<span class="hide-words">words</span>.
                                     </p>
                                     <span class="testimonials__info">Brooklyn, New York</span>
                                 </div>
@@ -296,7 +295,7 @@
                                         predefined chunks as necessary, making this the first true generator on the
                                         Internet. It
                                         uses a
-                                        dictionary of over 200 Latin<span class="hide-words">words.</span>
+                                        dictionary of over 200 Latin<span class="hide-words">words</span>.
                                     </p>
                                     <span class="testimonials__info">Brooklyn, New York</span>
                                 </div>
@@ -313,7 +312,7 @@
                                         predefined chunks as necessary, making this the first true generator on the
                                         Internet. It
                                         uses a
-                                        dictionary of over 200 Latin<span class="hide-words">words.</span>
+                                        dictionary of over 200 Latin<span class="hide-words">words</span>.
                                     </p>
                                     <span class="testimonials__info">Brooklyn, New York</span>
                                 </div>
@@ -329,13 +328,14 @@
                 </div>
 
             </div>
+        </div>
     </section>
 
     <footer class="footer">
         <div class="wrapper">
             <div class="footer__info">
                 <a class="footer__img-link" href="javascript:;">
-                    <img class="footer__img" src="images/footer_logo.png" alt="footer_logo_error" class="footer__logo">
+                    <img class="footer__img footer__logo" src="images/footer_logo.png" alt="footer_logo_error">
                 </a>
                 <a class="footer__number-link" href="javascript:;">
                     <span class="footer__number footer__text">+1 96 541231547</span>
@@ -345,21 +345,24 @@
             <span class="footer__line"></span>
             <nav class="footer__nav">
                 <ul class="footer__list">
-                    <a class="footer__list-link footer__margin-right" href="javascript:;">
-                        <li class="footer__list-item">Home</li>
-                    </a>
-                    <a class="footer__list-link footer__margin" href="javascript:;">
-                        <li class="footer__list-item">About Us</li>
-                    </a>
-                    <a class="footer__list-link footer__margin" href="javascript:;">
-                        <li class="footer__list-item">New Arrivals</li>
-                    </a>
-                    <a class="footer__list-link footer__margin" href="javascript:;">
-                        <li class="footer__list-item">Testimonials</li>
-                    </a>
-                    <a class="footer__list-link footer__margin-left" href="javascript:;">
-                        <li class="footer__list-item">Contact</li>
-                    </a>
+
+                    <li class="footer__list-item footer__margin-right"><a class="footer__list-link" href="javascript:;"
+                            onclick="scrollToElement('.banner')">Home</a>
+                    </li>
+
+                    <li class=" footer__list-item footer__margin"><a class="footer__list-link" href="javascript:;"
+                            onclick="scrollToElement('.info')">About
+                            Us</a></li>
+
+                    <li class="footer__list-item footer__margin"><a class="footer__list-link" href="javascript:;"
+                            onclick="scrollToElement('.products')">New
+                            Arrivals</a></li>
+
+                    <li class="footer__list-item footer__margin"><a class="footer__list-link" href="javascript:;"
+                            onclick="scrollToElement('.testimonials')">Testimonials</a></li>
+
+                    <li class="footer__list-item footer__margin-left"><a class="footer__list-link" href="javascript:;"
+                            onclick="scrollToElement('.footer')">Contact</a></li>
                 </ul>
             </nav>
 
@@ -370,7 +373,7 @@
                 <input class="form__button btn-input" type="button" value="SEND">
             </form>
             <ul class="footer__end">
-                <li class="footer__end-item footer__end-item--first js-footer-first">All rights served © Big Ben 2020
+                <li class="footer__end-item footer__end-item--first js-footer-first">All rights reserved © Big Ben 2020
                 </li>
                 <li class="footer__end-item footer__end-item--middle js-footer-middle"><a class="footer__end-item__link"
                         href="javascript:;">Privacy policy</a></li>

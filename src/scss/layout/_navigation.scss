@@ -32,8 +32,42 @@
 .nav__list-item {
     font-size: 16px;
     line-height: 16px;
-    color: $bunker-mid-light;
     font-weight: 400;
+    position: relative;
+
+    @include breakpoint(phone) {
+        display: block;
+        margin: 0 0 30px 0;
+    }
+}
+
+.nav__margin {
+    margin: 0 34px;
+
+    @include breakpoint(phone) {
+        margin: 0 0 30px 0;
+    }
+}
+
+.nav__margin-left {
+    margin-left: 34px;
+
+    @include breakpoint(phone) {
+        margin: 0 0 30px 0;
+    }
+}
+
+.nav__margin-right {
+    margin-right: 34px;
+
+    @include breakpoint(phone) {
+        margin: 0 0 30px 0;
+    }
+}
+
+.nav__list-link {
+    text-decoration: none;
+    color: $bunker-mid-light;
 
     &:hover {
         color: $bunker;
@@ -45,43 +79,5 @@
             width: 100%;
             border: 1px solid $tacao;
         }
-    }
-
-    @include breakpoint(phone) {
-        display: block;
-        margin-left: 0;
-    }
-}
-
-.nav__margin {
-    margin: 0 34px;
-
-    @include breakpoint(phone) {
-        margin: 0;
-    }
-}
-
-.nav__margin-left {
-    margin-left: 34px;
-
-    @include breakpoint(phone) {
-        margin: 0;
-    }
-}
-
-.nav__margin-right {
-    margin-right: 34px;
-
-    @include breakpoint(phone) {
-        margin: 0;
-    }
-}
-
-.nav__list-link {
-    text-decoration: none;
-    position: relative;
-
-    @include breakpoint(phone) {
-        margin-bottom: 30px;
     }
 }

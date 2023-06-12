@@ -4,7 +4,7 @@
 
 .testimonials__background {
     @extend %bg-img;
-    padding-top: 100px;
+    padding-top: 101px;
 
     @include breakpoint(phone) {
         padding-top: 30px;
@@ -98,7 +98,7 @@
     padding: 16px 0 48px 0;
 
     @include breakpoint(phone) {
-        padding-bottom: 124px;
+        padding-bottom: 126px;
         padding-top: 16px;
     }
 }
@@ -127,7 +127,7 @@
     }
 
     @include breakpoint(phone) {
-        bottom: 88px;
+        bottom: 90px;
 
         &::after {
             display: none;

@@ -23,6 +23,7 @@
 
     @include breakpoint(phone) {
         padding-top: 0;
+        height: 117px;
     }
 }
 
@@ -71,33 +72,21 @@
     display: block;
     border: 1px solid $grey-dark;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .footer__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 42px;
+    margin-bottom: 44px;
 }
 
 .footer__list-item {
     font-size: 16px;
     line-height: 16px;
-    color: $grey-mid;
     font-weight: 400;
-
-    &:hover {
-        color: $white;
-
-        &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 100%;
-            border: 1px solid $tacao;
-        }
-    }
+    position: relative;
 }
 
 .footer__margin {
@@ -114,7 +103,19 @@
 
 .footer__list-link {
     text-decoration: none;
-    position: relative;
+    color: $grey-mid;
+
+    &:hover {
+        color: $white;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            border: 1px solid $tacao;
+        }
+    }
 }
 
 .footer__form {
@@ -123,7 +124,7 @@
     justify-content: space-between;
 
     @include breakpoint(phone) {
-        margin-bottom: 50px;
+        margin-bottom: 49px;
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -134,7 +135,7 @@
     font-size: 16px;
     line-height: 16px;
     color: $white;
-    border: 1px solid $old-lace-light;
+    border: 0;
     display: inline-block;
     width: 23.75%;
     height: 50px;
@@ -142,11 +143,19 @@
     padding-left: 14px;
     margin-right: 1.33%;
 
+    &:focus {
+        border: 1px solid $old-lace;
+        background-color: $cape-cod;
+        outline: none;
+    }
+
     @include breakpoint(phone) {
         width: 100%;
         max-width: 400px;
         margin-right: 0;
         margin-bottom: 20px;
+        padding-left: 17px;
+        padding-top: 5px;
     }
 }
 
@@ -158,10 +167,6 @@
         width: 100%;
         margin-right: 0;
     }
-}
-
-.on-focus {
-    background-color: $cape-cod;
 }
 
 .footer__end {
@@ -191,16 +196,16 @@
 }
 
 .footer__end-item--first {
-    padding-right: 15px;
+    padding-right: 12px;
 
     @include breakpoint(phone) {
-        padding-right: 0;
         border-right: 0;
+        padding-right: 0;
     }
 }
 
 .footer__end-item--last {
-    padding-left: 15px;
+    padding-left: 12px;
     padding-right: 0;
     border-right: 0;
 
@@ -209,12 +214,12 @@
     }
 
     @include breakpoint(phone) {
-        padding-left: 5px;
+        padding-left: 12px;
     }
 }
 
 .footer__end-item--middle {
-    padding: 0 15px;
+    padding: 0 12px;
 
     &:hover {
         opacity: 0.7;
@@ -223,7 +228,7 @@
     @include breakpoint(phone) {
         padding: 0;
         margin-bottom: 10px;
-        padding-right: 5px;
+        padding-right: 12px;
     }
 }
 

@@ -7,13 +7,13 @@
 
 .info__background {
     @extend %bg-img;
-    padding-top: 110px;
+    padding-top: 111px;
     padding-bottom: 116px;
     overflow: hidden;
 
     @include breakpoint(phone) {
         padding-top: 35px;
-        padding-bottom: 0;
+        padding-bottom: 6px;
     }
 }
 
@@ -75,8 +75,11 @@
     }
 
     @include breakpoint (phone) {
-        max-width: 100%;
         transform: unset;
+        max-width: 458px;
+        display: block;
+        margin: 0 auto;
+        padding-left: 0;
     }
 }
 
@@ -84,6 +87,7 @@
     padding-bottom: 36.17px;
     position: relative;
     display: inline-block;
+    padding-top: 1px;
 
     @include breakpoint(phone) {
         font-weight: 400;
@@ -91,7 +95,7 @@
         line-height: 60px;
         text-align: center;
         margin: 0 auto;
-        padding-bottom: 10px;
+        padding-bottom: 7px;
     }
 }
 
@@ -105,5 +109,6 @@
 
     @include breakpoint(phone) {
         margin-left: 0;
+        padding-bottom: 19.59px;
     }
 }
