@@ -1,4 +1,8 @@
 let borderUrl = `url(\'images/banner.png\')`;
+var init = false;
+var swiper1;
+
+//SWIPERS
 
 var swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -37,8 +41,6 @@ window.addEventListener('resize', function () {
     swiper.update();
 });
 
-var init = false;
-var swiper1;
 function swiperCard() {
     if (window.innerWidth <= 1209) {
         if (!init) {
@@ -56,18 +58,26 @@ function swiperCard() {
     }
 }
 
+// Check initial screen width on page load
+window.addEventListener("load resize", function () {
+    if (window.innerWidth <= 1209) {
+        swiperCard();
+    }
+});
+
+//NAVIGATION
 
 function nav() {
     var $toggle = $('.js-toggle');
-    var open = 'toggle-open';
     var $nav = $('.js-nav');
+    var open = 'toggle-open';
 
     $toggle.on('click', function () {
-        if ($toggle.hasClass(open)) {  //hasClass - metoda za proveru postojanja klase
+        if ($toggle.hasClass(open)) {
             $toggle.removeClass(open);
-            $nav.stop().slideUp(function () {   //ovako pozivamo callback funkciju koja se izvrsava nakon sto prva zavrsi (u ovom slucaju nakon sto se uvuce navigacija).
+            $nav.stop().slideUp(function () {
                 $nav.removeAttr('style');
-            });  //metoda stop() nam omogućava da se klikne samo jednom a ne vise puta (sprecava yoyo efekat ponovnog zatvaranja i otvaranja)
+            });
         } else {
             $toggle.addClass(open);
             $nav.stop().slideDown();
@@ -75,23 +85,10 @@ function nav() {
     });
 }
 
-function inputOnFocus() {
-    var $input = $('.js-input');
-    var onFocus = 'on-focus';
-
-    $input.focus(function () {
-        $(this).addClass(onFocus);
-    });
-
-    $input.blur(function () {
-        $(this).removeClass(onFocus)
-    })
-}
-
 function addGradient(url) {
     var $gradient = $('.js-gradient');
 
-    $(window).on('resize load', function () {    //osluškujemo širinu ekrana i svaki put kad smanjimo ili povećamo ekran trigeruje se ovaj događaj
+    $(window).on('resize load', function () {
         if ($(window).width() <= 1024) {
             $gradient.css('background', `linear-gradient(193.35deg, rgba(0, 3, 8, 0) 3.18%, rgba(0, 3, 8, 1) 56.87%), ${url}`);
         } else {
@@ -100,16 +97,21 @@ function addGradient(url) {
     });
 }
 
+//PRODUCTS
+
 function centerTable() {
     var $swiper = $('.js-swiper');
-    var sw = 'swiper-wrapper'
+    var $swiper1 = $('.swiper1');
+    var sw = 'swiper-wrapper';
 
     $(window).on('resize load', function () {
-        if ($(window).width() <= 1209) {
+        if ($(window).width() <= 1209 && $(window).width() > 767) {
             $swiper.addClass(sw);
-            $('.swiper1').css('width', '585px')
+            $swiper1.css('width', '585px')
         }
-        else {
+        else if ($(window).width() <= 767) {
+            $swiper1.css('width', '335px')
+        } else {
             $swiper.removeClass(sw);
         }
     });
@@ -150,8 +152,6 @@ function moveElement() {
 
 $(document).ready(function () {
     var firstLi = $('.js-footer-first');
-    var middleLi = $('.js-footer-middle');
-    var lastLi = $('.js-footer-last');
     var footerEnd = $('.footer__end');
 
     function reorderLiElements() {
@@ -169,11 +169,17 @@ $(document).ready(function () {
     $(window).resize(reorderLiElements);
 });
 
+function scrollToElement(selector) {
+    var element = document.querySelector(selector);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+//scrollToElement(selector);
 moveElement();
 changePicturesForPhone();
 nav();
-inputOnFocus();
 addGradient(borderUrl);
 centerTable();
 swiperCard();
-window.addEventListener("resize load", swiperCard);
