@@ -32,7 +32,7 @@ h2 {
     height: 0;
     border: 1px solid $bunker;
     display: inline-block;
-    transform: translateY(-16px);
+    transform: translateY(-18px);
     margin-right: 16px;
 
     @include breakpoint(phone) {

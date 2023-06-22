@@ -7,8 +7,8 @@
 
 .info__background {
     @extend %bg-img;
-    padding-top: 111px;
-    padding-bottom: 116px;
+    padding-top: 112px;
+    padding-bottom: 114px;
     overflow: hidden;
 
     @include breakpoint(phone) {

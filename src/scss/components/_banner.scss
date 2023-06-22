@@ -81,10 +81,10 @@
     width: 1041px;
 
     @include breakpoint(phone) {
-        top: -236px;
-        right: -440px;
+        top: -244px;
+        right: -439px;
         height: 200%;
         overflow: hidden;
-        scale: 0.5;
+        scale: 0.48;
     }
 }

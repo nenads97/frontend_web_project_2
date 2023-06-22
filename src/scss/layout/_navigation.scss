@@ -1,5 +1,5 @@
 .nav {
-    transform: translate(-1px, -26px);
+    transform: translateY(-27px);
 
     @include breakpoint(phone) {
         position: absolute;

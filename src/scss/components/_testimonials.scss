@@ -55,18 +55,20 @@
     }
 
     @include breakpoint(phone) {
-        padding-top: 29px;
+        padding-top: 180px;
     }
 }
 
 .testimonilas__content-wrap {
-    padding: 0px 204px 158px;
+    padding: 0px 490px 212px 204px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: right;
+    position: relative;
 
-    @include breakpoint (1209px) {
+    @include breakpoint (tablet) {
+        padding: 240px 205px 140px 205px;
         flex-wrap: wrap-reverse;
         justify-content: space-around;
         text-align: center;
@@ -74,6 +76,7 @@
 
     @include breakpoint(phone) {
         padding: 0;
+        justify-content: space-around;
     }
 }
 
@@ -88,18 +91,27 @@
     left: 0;
     padding-top: 18px;
 
+    @include breakpoint(tablet) {
+        padding-top: 38px;
+    }
+
     @include breakpoint(phone) {
         font-size: 100px;
-        line-height: 60px;
+        line-height: 360px;
     }
 }
 
 .testimonials__text {
     padding: 16px 0 48px 0;
 
+    @include breakpoint(tablet) {
+        padding: 33px 0 48px 0;
+    }
+
     @include breakpoint(phone) {
-        padding-bottom: 126px;
+        padding-bottom: 125px;
         padding-top: 16px;
+        text-align: center;
     }
 }
 
@@ -121,12 +133,14 @@
         background-color: $bunker;
     }
 
-    @include breakpoint(1209px) {
+    @include breakpoint(tablet) {
         right: 50%;
         transform: translateX(50%);
     }
 
     @include breakpoint(phone) {
+        right: 50%;
+        transform: translateX(50%);
         bottom: 90px;
 
         &::after {
@@ -145,14 +159,24 @@
 }
 
 .testimonials__profile-pic {
-    display: inline-block;
-    width: 279px;
-    height: 279px;
     filter: drop-shadow(0px 20px 30px $bunker-medium-light);
+    transform: translateY(-11px);
+    position: absolute;
+    top: 0px;
+    right: 175px;
+
+    @include breakpoint(tablet) {
+        top: 24%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
     @include breakpoint(phone) {
-        width: 150px;
-        height: 150px;
+        width: 210px;
+        height: 210px;
+        transform: translateX(-50%);
+        top: -10px;
+        left: 50%;
     }
 }
 

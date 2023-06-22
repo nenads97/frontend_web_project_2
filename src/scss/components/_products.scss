@@ -8,7 +8,7 @@
 
 .products__background-mask {
     background-color: $bunker-dark;
-    padding-top: 99px;
+    padding-top: 102px;
     position: relative;
 
     @include breakpoint(phone) {
@@ -102,7 +102,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 90px;
+    padding-bottom: 89px;
 
     @include breakpoint(1209px) {
         justify-content: space-around;
@@ -247,5 +247,13 @@
 
     @include breakpoint(phone) {
         transform: translateY(-10px);
+    }
+}
+
+.products__title-wrap {
+    margin-left: -121px;
+
+    @include breakpoint(1209px) {
+        margin: 0;
     }
 }
