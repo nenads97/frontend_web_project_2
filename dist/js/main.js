@@ -91,6 +91,7 @@ function addGradient(url) {
     $(window).on('resize load', function () {
         if ($(window).width() <= 1024) {
             $gradient.css('background', `linear-gradient(193.35deg, rgba(0, 3, 8, 0) 3.18%, rgba(0, 3, 8, 1) 56.87%), ${url}`);
+            $gradient.css('background-repeat', 'no-repeat');
         } else {
             $gradient.css('background', url)
         }
@@ -120,15 +121,24 @@ function centerTable() {
 function changePicturesForPhone() {
     var $logo = $('.js-header-img');
     var $blueWatch = $('.js-phone-img');
+    var $greenWatch = $('.js-img2');
+    var $productsWatch1 = $('.js-watch1');
+    var $testProfilePic = $('.js-profile-pic')
 
     $(window).on('resize load', function () {
         if ($(window).width() <= 767) {
             $logo.attr('src', 'images/phone/logo_phone.png');
             $blueWatch.attr('src', 'images/phone/blue-watch_phone.png');
+            $greenWatch.attr('src', 'images/phone/green-watch_phone.png');
+            $productsWatch1.attr('style', 'background-image: url(\'images/phone/products_watch1.png\')');
+            $testProfilePic.attr('src', 'images/phone/testimonials_profile-pic_phone.png');
         }
         else {
             $logo.attr('src', 'images/big-ben-logo.png');
             $blueWatch.attr('src', 'images/informations_img1.png');
+            $greenWatch.attr('src', 'images/informations_img2.png');
+            $productsWatch1.attr('style', 'background-image: url(\'images/products_img1.png\')');
+            $testProfilePic.attr('src', 'images/testimonials_profile_pic.png');
         }
     });
 }
